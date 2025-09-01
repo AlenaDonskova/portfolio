@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "aabed8a5-e58e-42af-ad18-c80131ec1c88",
+		"name": "shift_25",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46606045",
+		"_collection_link": "https://alyona-1080102.postman.co/workspace/Alyona's-Workspace~03cfaa5c-482b-453c-855d-f0a3f29f53e9/collection/46606045-aabed8a5-e58e-42af-ad18-c80131ec1c88?action=share&source=collection_link&creator=46606045"
+	},
+	"item": [
+		{
+			"name": "Добавить животное",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"name\": \"Собака\"\r\n  },\r\n  \"name\": \"Бетти\",\r\n  \"photoUrls\": [],\r\n  \"tags\": [\r\n    {\r\n      \"name\": \"Хорошая девочка\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Инфо о животном",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/9223372036854767291",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"9223372036854767291"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменение инфо о животном",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3344334,\r\n  \"category\": {\r\n    \"name\": \"Собака\"\r\n  },\r\n  \"name\": \"Бетти\",\r\n  \"photoUrls\": [],\r\n  \"tags\": [\r\n    {\r\n      \"name\": \"Хорошая девочка\"\r\n    }\r\n  ],\r\n  \"status\": \"sold\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление животного",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/9223372036854767291",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"9223372036854767291"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
